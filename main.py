@@ -21,3 +21,21 @@ def read_root():
     data = get_tabs()
 
     return data
+
+
+@app.get("/1")
+def read_root():
+    data = get_tabs()[0]
+    return data
+
+
+@app.get("/2")
+def read_root():
+    data = get_tabs()[1]
+    return data
+
+
+@app.get("/3")
+def read_root():
+    data = get_tabs()[2]
+    return data
